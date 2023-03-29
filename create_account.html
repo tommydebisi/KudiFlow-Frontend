@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <title>User Signup</title>
+  </head>
+  <body>
+    <main class="left">
+      <div class="container-left">
+        <section class="header">
+          <a href="#" class="return-button"
+            ><img src="./assets/images/arrow-left.svg" alt="arrow-left"
+          /></a>
+          <a href="index.html" class="create-button">Login to account</a>
+        </section>
+        <section class="left-form">
+          <h1 class="second_big-tx">Get started with kudiflow</h1>
+          <form>
+            <label for="email">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="eg. harrison"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="eg. account@company.com"
+              required
+            />
+            <label for="password">Password</label>
+            <div class="input-group">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter preferred password"
+                required
+              />
+              <i class="ti ti-eye-off input-icon"></i>
+            </div>
+            <div class="info-message error">
+              <i class="ti ti-x"></i>
+              <p>Email already exists</p>
+            </div>
+
+            <button type="submit" value="">Create account</button>
+          </form>
+        </section>
+        <section class="split-line">
+          <span>OR</span>
+        </section>
+      </div>
+
+      <div class="kudi-logo">
+        <img src="assets/images/footer logo.svg" alt="logo" />
+        <img src="assets/images/kudiflow.svg" alt="kudiflow" />
+      </div>
+    </main>
+
+    <main class="right">
+      <nav class="top-right">
+        <ul>
+          <li><a href="./create_account.html">Sign Up</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+        <button class="top-right-btn">
+          <a href="./index.html">Login</a>
+        </button>
+      </nav>
+
+      <img src="./assets/images/mac-mock.png" alt="mac-laptop" />
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

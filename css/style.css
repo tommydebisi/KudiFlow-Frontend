@@ -1,0 +1,400 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* primary colors */
+  --primary-blue: #0986fb;
+  --primary-dark-blue: #0369c9;
+  --white: #ffffff;
+  --light-gray: #e5e5ea;
+  --black: #000000;
+
+  /* input colors */
+  --input-light-gray: #e1f0ff;
+
+  /* border colors */
+  --border-light-gray: #eeeeee;
+  --border-feint-gray-4: rgba(0, 0, 0, 0.04);
+  --border-feint-gray-5: rgba(0, 0, 0, 0.05);
+
+  /* button colors */
+  --btn-white: #fffefe;
+
+  /* background colors */
+  --bg-light-gray: #fbfbfb;
+  --bg-gray-1e: #1e1e1e;
+
+  /* icon colors */
+  --icon-green: #34c759;
+  --icon-red: #ea4335;
+  --icon-gray: #48484a;
+
+  /* fonts */
+  --font-std-2: 0.125em;
+  --font-std-4: 0.25em;
+  --font-std-5: 0.3125em;
+  --font-std-6: 0.375em;
+  --font-std-7: 0.4375em;
+  --font-std-10: 0.625em;
+  --font-std-12: 0.75em;
+  --font-std-14: 0.875em;
+  --font-std-15: 0.9375em;
+  --font-std: 1em;
+  --font-std-17: 1.0625em;
+  --font-std-18: 1.125em;
+  --font-std-20: 1.25em;
+  --font-std-24: 1.5em;
+  --font-std-27: 1.6875em;
+  --font-std-28: 1.75em;
+  --font-std-29: 1.8125em;
+  --font-std-30: 1.875em;
+  --font-std-39: 2.4375em;
+  --font-std-40: 2.5em;
+  --font-std-49: 3.0625em;
+  font-family: "Figtree", sans-serif;
+}
+
+/* Set font size and line height */
+html {
+  font-size: 16px;
+  font-style: normal;
+  height: 100vh;
+}
+
+/* Default element styling */
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: var(--font-std-5);
+  font-weight: 400;
+  font-size: var(--font-std-15);
+  line-height: var(--font-std-18);
+  color: var(--black);
+}
+
+button {
+  border: none;
+}
+
+/* placeholder default */
+::placeholder {
+  font-size: var(--font-std-14);
+  line-height: var(--font-std-17);
+  font-weight: 400;
+  color: #a0a0a5;
+}
+
+/* Style the container */
+.container-left {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1.1875rem;
+}
+
+/* Style the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+main.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 100vh;
+}
+
+main.right {
+  display: none;
+}
+
+.return-button {
+  font-size: 0.9375rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.375rem;
+  height: 2.375rem;
+  background-color: var(--white);
+  border: 0.38px solid var(--light-gray);
+  box-shadow: 0px 1px 25px -4px var(--border-feint-gray-5);
+}
+
+.create-button {
+  color: var(--primary-blue);
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  text-decoration: none;
+  width: 7.75rem;
+  cursor: pointer;
+}
+
+/* Style the h1 tag */
+.second_big-tx {
+  font-size: var(--font-std-24);
+  line-height: var(--font-std-29);
+  margin-bottom: 1.0625rem;
+  font-weight: 700;
+}
+
+/* Style the input form */
+input {
+  height: var(--font-std-49);
+  padding: 0.5rem;
+  margin-bottom: var(--font-std-12);
+  border-radius: var(--font-std-4);
+  font-size: var(--font-std-15);
+  font-weight: 400;
+  color: var(--black);
+  border: 0.5px solid var(--light-gray);
+  box-shadow: 0px 0.5px 20px -6px var(--border-feint-gray-4);
+  outline: none;
+}
+
+input#password {
+  margin-bottom: var(--font-std-4);
+}
+
+input:focus {
+  border: 0.5px solid var(--primary-blue);
+  box-shadow: 0px 0px 0px 2.5px var(--input-light-gray);
+}
+
+/* Style the password input */
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  right: 0.5rem;
+  cursor: pointer;
+  top: 30%;
+  height: 0.75em;
+  color: var(--icon-gray);
+}
+
+/* Style the forgot password link */
+.forgot-tx {
+  margin-top: var(--font-std-4);
+  margin-bottom: var(--font-std-27);
+  line-height: var(--font-std-18);
+}
+.forgot-tx a {
+  font-size: var(--font-std-15);
+  font-weight: 400;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+
+.info-message {
+  display: flex;
+  align-items: center;
+  height: var(--font-std-18);
+  line-height: var(--font-std-18);
+  font-size: 0.8125rem;
+  gap: var(--font-std-7);
+}
+
+.error p {
+  color: var(--icon-red);
+}
+
+i.ti-x {
+  color: var(--icon-red);
+}
+
+.hidden {
+  display: none;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-blue);
+  color: var(--btn-white);
+  border-radius: var(--font-std-4);
+  line-height: var(--font-std-20);
+  cursor: pointer;
+  font-size: var(--font-std-17);
+  font-weight: 600;
+  height: 46px;
+  margin-bottom: var(--font-std-39);
+}
+
+/* Style the split line */
+.split-line {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.split-line:before,
+.split-line:after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e2e2e7;
+}
+
+.split-line span {
+  padding: 0 10px;
+  font-weight: 400;
+  font-size: var(--font-std-15);
+  color: #e2e2e7;
+  line-height: var(--font-std-18);
+}
+
+/*style the footer*/
+.kudi-logo {
+  margin-top: auto;
+  align-self: center;
+  margin-bottom: var(--font-std-28);
+  display: flex;
+  align-items: center;
+  gap: 0.4625em;
+}
+
+.kudi-logo img {
+  height: var(--font-std-20);
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 768px) {
+  /* desktop defaults */
+  body {
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  /* left side styles */
+  main.left {
+    width: 50vw;
+    background-color: var(--bg-light-gray);
+    border-right: 1px solid var(--border-light-gray);
+    font-size: 1rem;
+    justify-content: unset;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .container-left {
+    background-color: var(--white);
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 3.5rem 4rem; */
+    padding: 6vh 0;
+    margin: 0 10vw;
+    border: 0.5px solid var(--border-light-gray);
+    border-radius: var(--font-std-15);
+    box-shadow: 0px 0.4px 4px rgba(0, 0, 0, 0.07);
+    order: 1;
+  }
+
+  .left-form {
+    /* padding: 3.5rem 4rem; */
+    width: 25vw;
+  }
+
+  .split-line {
+    width: 25vw;
+  }
+
+  .kudi-logo {
+    order: 0;
+    margin-top: 4dvh;
+    margin-left: 4dvw;
+    margin-bottom: 8vh;
+    align-self: flex-start;
+    line-height: var(--font-std-49);
+    height: var(--font-std-49);
+  }
+
+  .kudi-logo img {
+    height: fit-content;
+  }
+
+  /* right side styles */
+  main.right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+  }
+
+  nav.top-right {
+    margin: 4dvh 4dvw 0 auto;
+    display: flex;
+    line-height: var(--font-std-49);
+  }
+
+  nav.top-right ul {
+    display: flex;
+    gap: var(--font-std-30);
+    margin-right: var(--font-std-30);
+  }
+
+  nav.top-right ul li a {
+    color: var(--black);
+    font-weight: 500;
+    font-size: var(--font-std-24);
+    cursor: pointer;
+  }
+
+  nav.top-right ul li:hover a {
+    color: var(--primary-blue);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .top-right-btn {
+    font-size: var(--font-std-20);
+    padding: var(--font-std-10) var(--font-std-20);
+    background-color: var(--primary-blue);
+    border-radius: var(--font-std-6);
+    text-align: center;
+  }
+
+  .top-right-btn a {
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+  }
+
+  /* button active states */
+  button:hover {
+    background-color: var(--primary-dark-blue);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+
+  .right img {
+    height: 75vh;
+    width: 40vmax;
+    margin-top: auto;
+    align-self: flex-end;
+  }
+}
